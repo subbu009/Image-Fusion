@@ -510,15 +510,15 @@ int i,j,m;
 
 								coeff1[i][j]=waveencodeImage1[i][j];
 								coeff2[i][j]=waveencodeImage2[i][j];
-								//if (coeff1[i][j] > coeff2[i][j])
+								if (coeff1[i][j] > coeff2[i][j])
 								
-								FusedImage[i][j]= (coeff1[i][j]+coeff2[i][j])/2;
-								//FusedImage[i][j]= coeff1[i][j] ;
+								//FusedImage[i][j]= (coeff1[i][j]+coeff2[i][j])/2;
+								FusedImage[i][j]= coeff1[i][j] ;
 								
-								//else
-								//{
-								//FusedImage[i][j]=coeff2[i][j];
-								//
+								else
+								{
+								FusedImage[i][j]=coeff2[i][j];
+								
 
 
 
